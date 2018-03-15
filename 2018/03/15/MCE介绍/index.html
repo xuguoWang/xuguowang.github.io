@@ -11,7 +11,8 @@
     <meta name="author" content="Xuguo Wang" />
     <meta name="version" content="1.0.0" />
     <meta name="keywords" content="" />
-    <meta name="description" content="linux kernel" />
+    <meta name="description" content="#MCE 机制简介
+" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no" />
     <meta name="baidu-site-verification" content="F0CXvmUgA9" />
@@ -34,7 +35,7 @@
 
         
         
-        <li class="nav-item active">
+        <li class="nav-item">
             <a class="nav-link" href="/">首页</a>
         </li>
         
@@ -80,6 +81,8 @@
 
         
         
+        
+        
 
         
         <div class="author-meta">
@@ -114,53 +117,7 @@
 
 </header>
 
-        <div id="content" class="content">
-    <article class="article" itemscope itemprop="blogPost">
-    
-    <section class="article-body markdown-body">
-        
-        <h1 id="RAS-简介"><a href="#RAS-简介" class="headerlink" title="RAS 简介"></a>RAS 简介</h1><p>RAS(<strong>Reliability Availability Serviceability</strong>)用来描述一个硬件系统的可靠性、可用性、可服务性，最初由IBM提出，用来阐述大型机的健壮性。现如今这个概念已经从硬件的范畴延伸到软件范畴，但是我们在这主要阐述硬件方面的RAS特性。<br>文章展开之初先要阐述下这3个名词：</p>
-<ul>
-<li>Reliability</li>
-<li>Availability</li>
-<li>Servicebility</li>
-</ul>
-<h2 id="一-定义"><a href="#一-定义" class="headerlink" title="一. 定义"></a>一. 定义</h2><p>以下的定义都是摘自Wiki。</p>
-<h3 id="1-Reliability"><a href="#1-Reliability" class="headerlink" title="1. Reliability"></a>1. Reliability</h3><p>This term be defined as the probability that a system will produce correct outputs up to some given time t.<br>该概念包含了下述三个方面：</p>
-<ul>
-<li>系统正确输出的可能性</li>
-<li>通常测量的方法是MTBF（Mean Time Between Failures)</li>
-<li>通过一些特性来避免、检测和修复这些硬件错误</li>
-</ul>
-<h3 id="2-Availability"><a href="#2-Availability" class="headerlink" title="2. Availability"></a>2. Availability</h3><p>This term means the probability that a system is operational at a given time.<br>可用性通常讲的是：</p>
-<ul>
-<li>在特定一段时间内，系统的可操作性</li>
-<li>通用的一种测量方法是一段时间内宕机的百分比<ul>
-<li>例如99.9%(“3个9”)意味着没年有3.65天不可用</li>
-<li>99.999%意味着5.26分钟每年不可用</li>
-<li>无法服务的最少时间</li>
-<li>检测并纠正错误，并非检测和修复错误</li>
-</ul>
-</li>
-</ul>
-<h3 id="3-Servicebility"><a href="#3-Servicebility" class="headerlink" title="3. Servicebility"></a>3. Servicebility</h3><p>This term the simplicity and speed with which a system can be repaired or maintained.<br>可服务性表示的是：</p>
-<ul>
-<li>系统可以被修复的简单性和可维护性</li>
-<li>通用的测量方法是MTBF</li>
-<li>可以通过增加冗余来增加可服务性和更高的支持等级</li>
-</ul>
-<p>##二. 关于RAS的最近几年发展</p>
-<p>##三. RAS现存的一些问题</p>
-<p>##四. 如何提升RAS</p>
-<p>##五. 总结</p>
-<p><a href="mailto:wangxg13@gmail.com" target="_blank" rel="noopener">wangxg13@gmail.com</a></p>
-
-        
-    </section>
-</article>
-
-
-    <article class="article" itemscope itemprop="blogPost">
+        <div id="content" class="content"><article class="article" itemscope itemprop="blogPost">
     
     <section class="article-body markdown-body">
         
@@ -171,37 +128,27 @@
 </article>
 
 
-    <article class="article" itemscope itemprop="blogPost">
-    
-    <header class="article-header">
-        
-        <h1 itemprop="name">
-            <a href="/2018/03/04/readme/">readme</a>
-        </h1>
-        
-        <div class="article-meta clearfix">
-            <a class="article-date" href="/2018/03/04/readme/">
-    
-    <i class="icon-calendar"></i>
-    
-    <time datetime="2018-03-04T03:48:29.000Z" itemprop="datePublished">2018-03-04</time>
-</a>
 
-            
-
-        </div>
-    </header>
-    
-    <section class="article-body markdown-body">
-        
-        
-        
-    </section>
-</article>
-
-
-
-
+<div class="comments">
+    <div id="disqus_thread">
+        <p class="comment-tips">国内查看评论需要代理~</p>
+    </div>
+    <script>
+    window.disqus_config = function () {
+        this.language = 'zh';
+        this.page.url = 'http://yoursite.com/2018/03/15/MCE介绍/';
+        this.page.title = '';
+        this.page.identifier = '2018/03/15/MCE介绍/';
+    };
+    (function() { // DON'T EDIT BELOW THIS LINE
+        var d = document, s = d.createElement('script');
+        s.src = 'https://name.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
 
 </div>
         <footer class="footer">
@@ -214,6 +161,8 @@
     </div>
 
     <script type="text/javascript" src="https://cdn.bootcss.com/jquery/1.9.0/jquery.min.js"></script>
+    
+    <script type="text/javascript" src="/js/scrollspy.min.js"></script>
     
     <script type="text/javascript">
         $(function() {
@@ -235,6 +184,8 @@
                 nodes.navTags.removeClass('tag-show');
             });*/
 
+            
+            $(document.body).scrollspy({target: '#aside-inner'});
             
         });
     </script>

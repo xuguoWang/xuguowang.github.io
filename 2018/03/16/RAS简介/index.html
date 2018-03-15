@@ -11,7 +11,14 @@
     <meta name="author" content="Xuguo Wang" />
     <meta name="version" content="1.0.0" />
     <meta name="keywords" content="" />
-    <meta name="description" content="linux kernel" />
+    <meta name="description" content="RAS 简介RAS(Reliability Availability Serviceability)用来描述一个硬件系统的可靠性、可用性、可服务性，最初由IBM提出，用来阐述大型机的健壮性。现如今这个概念已经从硬件的范畴延伸到软件范畴，但是我们在这主要阐述硬件方面的RAS特性。文章展开之初先要阐述下这3个名词：
+
+Reliability
+Availability
+Servicebility
+
+一. 定义以下的定义都是摘自Wiki。
+1. ReliabilityThis term be defin" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no" />
     <meta name="baidu-site-verification" content="F0CXvmUgA9" />
@@ -34,7 +41,7 @@
 
         
         
-        <li class="nav-item active">
+        <li class="nav-item">
             <a class="nav-link" href="/">首页</a>
         </li>
         
@@ -80,42 +87,18 @@
 
         
         
+        
+        
 
         
-        <div class="author-meta">
-            
-            <div class="author-avatar">
-                <a href="/">
-                    <img src="/images/avatar.jpg" title="Charlie">
-                </a>
-            </div>
-            
-            <div class="author-name">Charlie</div>
-            <div class="author-work">Kernel Dev &amp; Student</div>
-            <div class="author-location">
-                <i class="icon-location vm"></i>
-                <span class="vm">NanJin, China</span>
-            </div>
-            
-            <div class="author-thread-wrap">
-                <div class="author-threads clearfix">
-                    
-                    <a class="thread-item" href="https://github.com/huddy1985" target="_blank"><i class="icon-github"></i></a>
-                    
-                    
-                    
-                </div>
-            </div>
-            
-        </div>
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#RAS-简介"><span class="toc-number">1.</span> <span class="toc-text">RAS 简介</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#一-定义"><span class="toc-number">1.1.</span> <span class="toc-text">一. 定义</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-Reliability"><span class="toc-number">1.1.1.</span> <span class="toc-text">1. Reliability</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-Availability"><span class="toc-number">1.1.2.</span> <span class="toc-text">2. Availability</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-Servicebility"><span class="toc-number">1.1.3.</span> <span class="toc-text">3. Servicebility</span></a></li></ol></li></ol></li></ol>
         
     </div>
 </aside>
 
 </header>
 
-        <div id="content" class="content">
-    <article class="article" itemscope itemprop="blogPost">
+        <div id="content" class="content"><article class="article" itemscope itemprop="blogPost">
     
     <section class="article-body markdown-body">
         
@@ -160,48 +143,27 @@
 </article>
 
 
-    <article class="article" itemscope itemprop="blogPost">
-    
-    <section class="article-body markdown-body">
-        
-        <p>#MCE 机制简介</p>
 
-        
-    </section>
-</article>
-
-
-    <article class="article" itemscope itemprop="blogPost">
-    
-    <header class="article-header">
-        
-        <h1 itemprop="name">
-            <a href="/2018/03/04/readme/">readme</a>
-        </h1>
-        
-        <div class="article-meta clearfix">
-            <a class="article-date" href="/2018/03/04/readme/">
-    
-    <i class="icon-calendar"></i>
-    
-    <time datetime="2018-03-04T03:48:29.000Z" itemprop="datePublished">2018-03-04</time>
-</a>
-
-            
-
-        </div>
-    </header>
-    
-    <section class="article-body markdown-body">
-        
-        
-        
-    </section>
-</article>
-
-
-
-
+<div class="comments">
+    <div id="disqus_thread">
+        <p class="comment-tips">国内查看评论需要代理~</p>
+    </div>
+    <script>
+    window.disqus_config = function () {
+        this.language = 'zh';
+        this.page.url = 'http://yoursite.com/2018/03/16/RAS简介/';
+        this.page.title = '';
+        this.page.identifier = '2018/03/16/RAS简介/';
+    };
+    (function() { // DON'T EDIT BELOW THIS LINE
+        var d = document, s = d.createElement('script');
+        s.src = 'https://name.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
 
 </div>
         <footer class="footer">
@@ -214,6 +176,8 @@
     </div>
 
     <script type="text/javascript" src="https://cdn.bootcss.com/jquery/1.9.0/jquery.min.js"></script>
+    
+    <script type="text/javascript" src="/js/scrollspy.min.js"></script>
     
     <script type="text/javascript">
         $(function() {
@@ -235,6 +199,8 @@
                 nodes.navTags.removeClass('tag-show');
             });*/
 
+            
+            $(document.body).scrollspy({target: '#aside-inner'});
             
         });
     </script>
